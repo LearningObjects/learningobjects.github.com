@@ -1,32 +1,32 @@
 Learning Objects - Research Group
 
 The Leper Colony: Center for Design and Technology
+[clone it!](https://github.com/eranws/LearningObjects)
+
+#Goal
+
+explore Human-Object Interaction emphasizing nonverbal communication
 
 
-Members
+
+#Outputs and success metrics + examples
 
 
-Eran Weissenstern eranws@gmail.com
-Mark Shovman mark.shovman@gmail.com 
-Rami Hagege hagege@ee.bgu.ac.il 
-Michael Fink fink@cs.huji.ac.il 
-Yael Cohen yaeli.j.cohen@gmail.com
+#Conferences / shows
 
-Outputs and success metrics + examples
+[](CVPR,ACCV,ECCV,ICCV)
+[](Journals)
+[](Exhibits)
+[](ResearchLabs)
+[](ResearchDirections)
 
-
-Conferences / shows
-CVPR, ACCV, ECCV, ICCV
-Journals
-Exhibits
-Research labs
-Research directions
-
-Goal: explore Human-Object Interaction emphasizing nonverbal communication
-we eliminate the interesting topic of non-human (between-device) communications
 
 Where do we want to be on the intention spectrum between unintentional-analysis and intentional communications. Point along this spectrum include:
-Unintentional-analysis - eg room tuning parameters based on user activity
+
+Unintentional-analysis -
+
+#projects
+* Roomie, a room tuning parameters based on user activity
 
 Correlated physiological measurements with unintentional behaviour 
 Pre-communication intent identification
