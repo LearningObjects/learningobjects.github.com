@@ -197,8 +197,3 @@ Gawain Morrison [Biosuite](http://www.filmtrip.tv/work/entry/biosuite-emotional-
 
 ## Tools
 [faceapi](http://www.seeingmachines.com/product/faceapi/faceapi-videos/)
-
-
-
-### Contact
-[fork it!](https://github.com/eranws/LearningObjects "fork on github")

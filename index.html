@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Learning Objects - Research Group</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+</style>
+</head>
+<body>
+<h1>Learning Objects</h1>
+
+<h2>Research Group</h2>
+
+<p>The Leper Colony: Center for Design and Technology</p>
+
+<hr />
+
+<h1>Goal :</h1>
+
+<h2>Explore Human-Object Interaction, emphasizing non-verbal communication</h2>
+
+<h2>Main research Activities</h2>
+
+<ul>
+<li><p>communications<br />
+Intentional / Unintentional<br />
+Assistant vs. Tool<br />
+Manifestation vs. Manipulation</p></li>
+<li><p>Intentional communications goals:<br />
+Instrumental - Transforming communications with object (it) to subjective (you).<br />
+Wiki: <a href="http://en.wikipedia.org/wiki/Martin_Buber" title="Wiki">Martin Buber</a> - <a href="http://en.wikipedia.org/wiki/I_and_Thou">I and Thou</a>, Hebrew <a href="http://www.mofet.macam.ac.il/ktiva/kivunim/article22/Pages/meyou.aspx">article</a><br />
+Improve interpersonal communications (or reciprocal communication)</p></li>
+</ul>
+
+<h3>Keywords</h3>
+
+<p>Mutual learning<br />
+Environment - User Communications (object-subject, object-objects, ...)<br />
+common sense<br />
+Emotion Analysis<br />
+Personification<br />
+Theory of equal mind</p>
+
+<hr />
+
+<h1>Marketing Pitch</h1>
+
+<!-- this relates to lights only, maybe expand it to more projects-->
+
+<p>- How many times did you light a lamp in your lifetime? 10,000 times? 100,000 times?<br />
+How many times did you light the wrong lamp? didn't have enough light? would you prefer the light to be in different color or direction? or you would prefer the light be stronger on the book that you read and weaker elsewhere? <br />
+What if all that is going to change, and you will have a light just for you, doing exactly what you need?</p>
+
+<!--
+and the answer to all of the above questions would be:
+"Well, I never thought about it. there was no need for that,-->
+
+<p>- Well, I love the lighting system in Enterprise 5.</p>
+
+<hr />
+
+<h1>Projects</h1>
+
+<ul>
+<li><p>Roomie: a room tuning parameters based on user activity<br />
+Related:</p>
+
+<ol>
+<li>Music Room - shapes and colors that interact with movements in the room and rhythm </li>
+<li>A room with rich illumination that learn where is your books sofa and try to make perfect illumination for that, the musical corner , the eating corner, tv corner etc </li>
+<li>(Influenced by MIT guys) A TV which has its own illumination sources so that you can see light flashing outside the screen, A TV with light surround</li>
+<li>Games with light sources as hints to what is going to happen next, imagine someone is shooting at you and you hear the sound and light from the right directions</li>
+<li>Emotion Transfer games - you do some emotion the room is changed both in music and illumination according to that, this create another emotion on other people on the room which influence the room again and so on </li>
+<li>smart houses, objects aware of environment and neighboring objects. <br />
+Generate 100 emotion rooms. Goal - Resonate / change the emotional state / mood. <br />
+Psychological verification:<br />
+identify an emotion<br />
+reinforce the emotion<br />
+balance / change the emotion<br />
+When do we need each of these?</li>
+</ol></li>
+<li><p>Lamp(ard): <br />
+the reduction of this question to almost philosophical level: a single binary output (lamp on/off) with a single function (to provide light) and a lot of inputs.<br />
+Streching the theory of mind - connecting with an object that tries to optimze its likability. “lamp pet” as an example. Start with innate optimization (face time) and have the device learn what draws human attention. Must avoid becoming annoying. Use this as a test bed for exploring the establishment of communications.<br />
+example: <a href="http://vimeo.com/53476316">Pinokio</a></p></li>
+<li><p>Measure correlation of physiological with unintentional behaviour <br />
+for Pre-communication intent identification</p></li>
+<li><p>Object-Subject Relations<br />
+reciprocity - Meeting points between two subjects (and not subject-object)<br />
+subject - an entity with desires, needs and self definition<br />
+object - an entity serving a subject<br />
+subjectivity evolves first from seeing someone else (eg mother) as an object (satisfying needs) however in addition there’s a need for the subject to have recognition from another subject</p></li>
+<li><p>Illusions of intelligence: eye contact, breathing, nodding, tz tz tz</p></li>
+<li><p>Theory-of-mind model (aka: TOM)<br />
+Six levels of intelligent interaction:</p>
+
+<ol>
+<li>Static (non-interactive): </li>
+<li>Responsive deterministic</li>
+<li>Adaptive to a static environment</li>
+<li>Adaptive to the user</li>
+<li>Establishing communication with the user</li>
+<li>Full theory-of-mind <br />
+Experiments:<br />
+Quantitative: Measure the Learning time of Levels 2-4 vs. Level-5<br />
+Qualitative: Given 4 kinds of object, what would you prefer? <!-- "we need to make them cry if we will take it from them..."--></li>
+</ol></li>
+<li><p>I like to move it move it (aka: Il-Tmimi)<br />
+Gesture\Emotion  viral  behavior - you do some move because you like it the creatures on your room imitate you but they have mutations, then you see something which is nice and you imitate that than all imitate you , http://www.youtube.com/watch?v=xy11lkBvA9s<br />
+Animals that interact with you on the walls not just appear or disappear but dance and jump show you the way to the couch go to the places you like most and so on, virtual pets that actually live on your walls ( if you make them look like lice or bugs it will be interesting to some of us) </p></li>
+<li><p>DoorHandle<br />
+An object that learns the behavior of other objects.<br />
+<a href="http://eranws.github.com/behavior/">project page</a></p></li>
+<li><p>Security: <br />
+Code with Dance or hand gestures: "5326, Peace, Thumb up"</p></li>
+<li><p>Monkey in the Bush - A Motion/Emotion correllator<br />
+You do the movement - I find a movie or image of someone else do a similar move, or reflect with animation using motion capture. <a href=""http://4.bp.blogspot.com/_k9YRGIDlJZw/S5DwR1SuX0I/AAAAAAAACfc/WvykSiioesM/s1600/Bush+Monkey.jpg"" title="Animals will make it fun">example</a></p></li>
+<li><p>communications augmenting tool<br />
+Warning for parents about childrens emotional state.<br />
+Teachers tool - real time feedback (e.g. color coding) of the student’s state<br />
+Learning tool - identify attentional state and modify content / medium</p></li>
+<li><p>gesture API<br />
+dictionary of gestures, start with a database of gestures+semantics and generalize from the examples to all cultural depndant body language.<br />
+consider replacing data collection from batch to online in a real world environment interacting with objects.</p>
+
+<ul>
+<li>related:<br />
+<a href="http://www.mikolaj.info/edu/Body_Language_-_List_of_Signs_n_Gestures.pdf">The NONVERBAL DICTIONARY of GESTURES, SIGNS &amp; BODY LANGUAGE CUES</a><br />
+<a href="http://center-for-nonverbal-studies.org/6101.html">center for nonverbal studies</a></li>
+<li>Should bundle with a testbed / demo application.</li>
+</ul></li>
+<li><p>MySofa - automatically responding to the user needs<br />
+<a href="http://eranws.github.com/behavior/MySofa.html">project page</a><br />
+What makes a really good sofa?<br />
+Is it her color? her position in the room? or maybe her proportions? There are so many parameters that we can tweak to find the best one.<br />
+What if I want her to change according to my mood, or the activity I'm involved in?<br />
+modify: softness / angle / height<br />
+could be any other furniture: bed, chair, shelf</p></li>
+<li><p>other<br />
+(those need some elaboration)<br />
+Driving<br />
+Keyboard<br />
+Browser activities<br />
+Projector based<br />
+Color balance - warm<br />
+Interactive pot<br />
+Virtual Aquarium (you are the fish or the octupus ) <br />
+Ball games on the wall<br />
+Emotion trainer - (or: how to become a psycho)<br />
+low bandwidth output<br />
+Depth movies<br />
+Identifying loops</p></li>
+</ul>
+
+<h2>Metrics</h2>
+
+<p>Persicion<br />
+Physiological comfort  <br />
+Novelty<br />
+Respect<br />
+Reciproicity<br />
+Affection<br />
+Enjoyment<br />
+Frustration<br />
+Impact</p>
+
+<p>Ease of implementation / price<br />
+Clean / simplicity (Occam razor)</p>
+
+<h2>Issues / Discussions</h2>
+
+<p>Should we start with reciprocal illusions?<br />
+is similarity needed?<br />
+what objects do we want to keep as objects - even a King needs quite time </p>
+
+<h2>Reference</h2>
+
+<h3>Papers</h3>
+
+<p>Predictability, Complexity, and Learning. Bialek, Nemenman, Tishby. <a href="http://www.princeton.edu/~wbialek/our_papers/bnt_01a.pdf">pdf</a><a href="localLink?"></a></p>
+
+<h3>Books</h3>
+
+<p>bonds of love, Jessica Benjamin / p41. <a href="http://www.amazon.com/Bonds-Love-Psychoanalysis-Feminism-Domination/dp/0394757300">amazon</a>,</p>
+
+<h3>Links:</h3>
+
+<p>EyePet <a href="http://www.youtube.com/watch?v=aPENA1Bpm68">Trailer</a><br />
+Thermostat: <a href="http://support.nest.com/article/What-is-Auto-Away">"Auto-Away"</a></p>
+
+<p>Emotions</p>
+
+<ul>
+<li><a href="http://www.youtube.com/watch?v=ujxriwApPP4">Emotion Technology</a> TedTalk by Rosalind W. Picard</li>
+<li><a href="http://www.youtube.com/watch?v=8KRZX5KL4fA&amp;feature=related">Kismet</a>  an expressive robot head with social intelligence</li>
+<li><a href="http://en.wikipedia.org/wiki/The_Emotion_Machine">The Emotion Machine</a></li>
+<li><a href="http://www.youtube.com/watch?v=Vu2IXk5Jbag">BIGDOG</a></li>
+</ul>
+
+<h2>People</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/Marvin_Minsky">Marvin Minsky</a><br />
+<a href="http://en.wikipedia.org/wiki/Jessica_Benjamin">Jessica Benjamin</a><br />
+<a href="http://en.wikipedia.org/wiki/Dan_Ariely">Dan Arieli</a><br />
+Mark Bolas <br />
+Rotem Bennet<br />
+Gawain Morrison <a href="http://www.filmtrip.tv/work/entry/biosuite-emotional-response-cinema/">Biosuite</a>, <a href="http://www.filmtrip.tv/blog/entry/sensum-what-exactly-is-it/">Sensum</a></p>
+
+<h2>Tools</h2>
+
+<p><a href="http://www.seeingmachines.com/product/faceapi/faceapi-videos/">faceapi</a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
